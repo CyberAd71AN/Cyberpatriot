@@ -1,0 +1,18 @@
+New-NetFirewallRule -DisplayName "Block Inbound Port 21" -Direction Inbound -LocalPort 21 -Protocol TCP -Action Block
+New-NetFirewallRule -DisplayName "Block Inbound Port 22" -Direction Inbound -LocalPort 22 -Protocol TCP -Action Block
+New-NetFirewallRule -DisplayName "Block Inbound Port 23" -Direction Inbound -LocalPort 23 -Protocol TCP -Action Block
+New-NetFirewallRule -DisplayName "Block Inbound Port 110" -Direction Inbound -LocalPort 110 -Protocol TCP -Action Block
+New-NetFirewallRule -DisplayName "Block Inbound Port 135" -Direction Inbound -LocalPort 135 -Protocol TCP -Action Block
+New-NetFirewallRule -DisplayName "Block Inbound Port 1443" -Direction Inbound -LocalPort 1443 -Protocol TCP -Action Block
+New-NetFirewallRule -DisplayName "Block Inbound Port 3389" -Direction Inbound -LocalPort 3389 -Protocol TCP -Action Block
+
+
+
+
+New-NetFirewallRule -DisplayName "Block UDP Inbound Port 19 (chargen)" -Direction Inbound -LocalPort 19 -Protocol UDP -Action Block
+New-NetFirewallRule -DisplayName "Block UDP Inbound Port 53 (DNS)" -Direction Inbound -LocalPort 53 -Protocol UDP -Action Block
+New-NetFirewallRule -DisplayName "Block UDP Inbound Port 110 (POP3 port)" -Direction Inbound -LocalPort 53 -Protocol UDP -Action Block
+New-NetFirewallRule -DisplayName "Block UDP Inbound Port 69 (TFTP)" -Direction Inbound -LocalPort 69 -Protocol UDP -Action Block
+New-NetFirewallRule -DisplayName "Block UDP Inbound Port 123 (NTP)" -Direction Inbound -LocalPort 123 -Protocol UDP -Action Block
+New-NetFirewallRule -DisplayName "Block UDP Inbound Port 5353 (mDNS)" -Direction Inbound -LocalPort 5353 -Protocol UDP -Action Block
+New-NetFirewallRule -DisplayName "Block UDP Inbound Port 11211 (Memcached)" -Direction Inbound -LocalPort 11211 -Protocol UDP -Action Block
